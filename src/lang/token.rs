@@ -50,6 +50,8 @@ pub enum TokenKind {
     Not,
     Or,
 
+    Print,
+
     Eof
 }               //token class
 

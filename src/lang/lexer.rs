@@ -55,6 +55,7 @@ impl Lexer {
                         "and"       => self.make_token( TokenKind::And, None ),
                         "not"       => self.make_token( TokenKind::Not, None ),
                         "or"        => self.make_token( TokenKind::Or, None ),
+                        "print"     => self.make_token(TokenKind::Print, None),
 
                         _ => self.make_token( TokenKind::Ident, Some(ident) )
                     }
@@ -472,7 +473,7 @@ mod tests {
             TokenKind::Eq,
             TokenKind::Number,
             TokenKind::Then,
-            TokenKind::Ident,
+            TokenKind::Print,
             TokenKind::Lpar,
             TokenKind::String,
             TokenKind::Rpar,
